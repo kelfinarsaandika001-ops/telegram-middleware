@@ -1,4 +1,3 @@
-// REDEPLOY FORCE - 2026-08-04
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -23,6 +22,10 @@ app.post('/webhook', async (req, res) => {
 });
 
 app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
+app.get('/webhook', (req, res) => {
   res.status(200).send('OK');
 });
 

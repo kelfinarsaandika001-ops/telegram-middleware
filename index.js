@@ -3,8 +3,7 @@ const axios = require('axios');
 const app = express();
 app.use(express.json());
 
-const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyHyxx-OQFOXq70MwA5lev_TlzBtPrxd-gGDl7qxl_ZFcrgE2meGq0GgP7x7CIC4KlI/exec';
-
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzQ-XcWHCJjHPduu3Ko15oa6oik4BKE2O9aBdADYOcKikfbLVLwfaOBvOyGJdklVhFB/exec';
 app.post('/webhook', async (req, res) => {
   try {
     console.log('📩 Webhook received:', JSON.stringify(req.body));
